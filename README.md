@@ -1,5 +1,5 @@
 # My Awesome Quant
-Learn by implementing quant books code
+Learn quant by implementing books code
 
 **Ernie Chan**
 * [Quantitative Trading: How to Build Your Own Algorithmic Trading Business [1st Edition]](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business/dp/0470284889)
