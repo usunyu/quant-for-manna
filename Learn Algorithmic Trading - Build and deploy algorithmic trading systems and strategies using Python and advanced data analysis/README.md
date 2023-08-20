@@ -3,9 +3,9 @@
 
 # Learn Algorithmic Trading 
 
-<a href="https://www.packtpub.com/in/data/learn-algorithmic-trading-fundamentals-of-algorithmic-trading?utm_source=github&utm_medium=repository&utm_campaign=9781789348347"><img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781789348347-original.jpeg" alt="Learn Algorithmic Trading " height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/learn-algorithmic-trading/9781789348347"><img src="https://content.packt.com/B10927/cover_image_small.jpeg" alt="Learn Algorithmic Trading " height="256px" align="right"></a>
 
-This is the code repository for [Learn Algorithmic Trading ](https://www.packtpub.com/in/data/learn-algorithmic-trading-fundamentals-of-algorithmic-trading?utm_source=github&utm_medium=repository&utm_campaign=9781789348347), published by Packt.
+This is the code repository for [Learn Algorithmic Trading ](https://www.packtpub.com/product/learn-algorithmic-trading/9781789348347), published by Packt.
 
 **Build and deploy algorithmic trading systems and strategies using Python and advanced data analysis**
 
