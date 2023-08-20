@@ -178,7 +178,7 @@ class PortfolioHistory(object):
         self._cash_history: Dict[pd.Timestamp, Dollars] = dict()
         self._simulation_finished = False
         self._spy: pd.DataFrame = pd.DataFrame()
-        self._spy_log_returns: pd.Series = pd.Series()
+        self._spy_log_returns: pd.Series = pd.Series(dtype='float64')
 
     def add_to_history(self, position: Position):
         _log = self._logged_positions
