@@ -13,3 +13,6 @@ Learn quant by implementing code from books and papers
 
 * ##### [Algorithmic Trading with Python: Quantitative Methods and Strategy Development](https://www.amazon.com/dp/B086Y6H6YG) - `Chris Conlan`
   <img src="https://m.media-amazon.com/images/I/51R-BzrozLL.jpg" alt="Algorithmic Trading with Python" width="280"/>
+
+* ##### [Learn Algorithmic Trading: Build and deploy algorithmic trading systems and strategies using Python and advanced data analysis](https://www.amazon.com/Learn-Algorithmic-Trading-algorithmic-strategies/dp/178934834X) - `Sebastien Donadio`, `Sourav Ghosh`
+  <img src="https://m.media-amazon.com/images/I/61r4iAZa6LL.jpg" alt="Learn Algorithmic Trading" width="280"/>
