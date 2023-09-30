@@ -1,5 +1,5 @@
-# Quant for fortune
-Learn quant by implementing code from books and papers
+# Quant
+Quant for grand
 
 ## Books
 * ##### [Quantitative Trading: How to Build Your Own Algorithmic Trading Business](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business/dp/1119800064) - `Ernest P. Chan`
