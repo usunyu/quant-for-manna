@@ -1,5 +1,5 @@
 import unittest
-from chapter7.MarketSimulator import MarketSimulator
+from MarketSimulator import MarketSimulator
 
 
 class TestMarketSimulator(unittest.TestCase):
@@ -31,3 +31,6 @@ class TestMarketSimulator(unittest.TestCase):
         }
         self.market_simulator.handle_order(order1)
         self.assertEqual(len(self.market_simulator.orders),0)
+
+if __name__ == '__main__':
+    unittest.main()

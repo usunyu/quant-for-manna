@@ -1,8 +1,8 @@
-from chapter7.LiquidityProvider import LiquidityProvider
-from chapter7.TradingStrategy import TradingStrategy
-from chapter7.MarketSimulator import MarketSimulator
-from chapter7.OrderManager import OrderManager
-from chapter7.OrderBook import OrderBook
+from LiquidityProvider import LiquidityProvider
+from TradingStrategy import TradingStrategy
+from MarketSimulator import MarketSimulator
+from OrderManager import OrderManager
+from OrderBook import OrderBook
 from collections import deque
 
 def main():

@@ -1,5 +1,5 @@
 class TradingStrategy:
-    def __init__(self, ob_2_ts, ts_2_om, om_2_ts):
+    def __init__(self, ob_2_ts=None, ts_2_om=None, om_2_ts=None):
         self.orders = []
         self.order_id = 0
         self.position = 0

@@ -1,5 +1,5 @@
 import unittest
-from chapter7.TradingStrategy import TradingStrategy
+from TradingStrategy import TradingStrategy
 
 
 class TestMarketSimulator(unittest.TestCase):
@@ -67,5 +67,5 @@ class TestMarketSimulator(unittest.TestCase):
         self.assertEqual(self.trading_strategy.cash, 10100)
         self.assertEqual(self.trading_strategy.pnl, 100)
 
-
-
+if __name__ == '__main__':
+    unittest.main()

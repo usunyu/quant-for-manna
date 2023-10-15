@@ -1,5 +1,5 @@
 import unittest
-from chapter7.OrderManager import OrderManager
+from OrderManager import OrderManager
 
 
 class TestOrderBook(unittest.TestCase):
