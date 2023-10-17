@@ -1,8 +1,12 @@
-from chapter7.LiquidityProvider import LiquidityProvider
-from chapter9.TradingStrategyDualMA import TradingStrategyDualMA
-from chapter7.MarketSimulator import MarketSimulator
-from chapter7.OrderManager import OrderManager
-from chapter7.OrderBook import OrderBook
+import sys
+if "../" not in sys.path:
+    sys.path.append("../")
+
+from Chapter7.LiquidityProvider import LiquidityProvider
+from Chapter9.TradingStrategyDualMA import TradingStrategyDualMA
+from Chapter7.MarketSimulator import MarketSimulator
+from Chapter7.OrderManager import OrderManager
+from Chapter7.OrderBook import OrderBook
 from collections import deque
 
 import pandas as pd
@@ -78,6 +82,8 @@ class EventBasedBackTester:
 
 eb=EventBasedBackTester()
 
+import yfinance as yf
+yf.pdr_override()
 
 def load_financial_data(start_date, end_date,output_file):
     try:
@@ -85,7 +91,8 @@ def load_financial_data(start_date, end_date,output_file):
         print('File data found...reading GOOG data')
     except FileNotFoundError:
         print('File not found...downloading the GOOG data')
-        df = data.DataReader('GOOG', 'yahoo', start_date, end_date)
+        # df = data.DataReader('GOOG', 'yahoo', start_date, end_date)
+        df = data.get_data_yahoo('GOOG', start=start_date, end=end_date)
         df.to_pickle(output_file)
     return df
 
