@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import h5py
 from collections import deque
 
+import yfinance as yf
+yf.pdr_override()
 
 def load_financial_data(start_date, end_date,output_file):
     try:
@@ -13,7 +15,8 @@ def load_financial_data(start_date, end_date,output_file):
         print('File data found...reading GOOG data')
     except FileNotFoundError:
         print('File not found...downloading the GOOG data')
-        df = data.DataReader('GOOG', 'yahoo', start_date, end_date)
+        # df = data.DataReader('GOOG', 'yahoo', start_date, end_date)
+        df = data.get_data_yahoo('GOOG', start=start_date, end=end_date)
         df.to_pickle(output_file)
     return df
 
