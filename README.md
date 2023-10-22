@@ -1,5 +1,5 @@
 # Quant
-Quant for million
+Quant for Manna
 
 #### Books
 * ###### [Quantitative Trading: How to Build Your Own Algorithmic Trading Business](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business/dp/1119800064) [2nd] Ernest P. Chan
