@@ -9,6 +9,7 @@ Quant for million
 * ###### [Learn Algorithmic Trading: Build and deploy algorithmic trading systems and strategies using Python and advanced data analysis](https://www.amazon.com/Learn-Algorithmic-Trading-algorithmic-strategies/dp/178934834X) [1st] Sebastien Donadio, Sourav Ghosh
 * ###### [Machine Learning and Data Science Blueprints for Finance: From Building Trading Strategies to Robo-Advisors Using Python](https://www.amazon.com/Machine-Learning-Science-Blueprints-Finance/dp/1492073059) [1st] Hariom Tatsat, Sahil Puri, Brad Lookabaugh
 * ###### [Advances in Financial Machine Learning](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089) [1st] Marcos Lopez de Prado
+* ###### [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow-dp-1098125975/dp/1098125975) [3rd] Aurélien Géron
 
 #### Tutorials
 * ###### [Machine Learning and Pattern Recognition for Algorithmic Forex and Stock Trading](https://pythonprogramming.net/machine-learning-pattern-recognition-algorithmic-forex-stock-trading/) sentdex
