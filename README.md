@@ -12,4 +12,4 @@ Quant for Manna
 * ###### [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow-dp-1098125975/dp/1098125975) [3rd] Aurélien Géron
 
 #### Tutorials
-* ###### [Machine Learning and Pattern Recognition for Algorithmic Forex and Stock Trading](https://pythonprogramming.net/machine-learning-pattern-recognition-algorithmic-forex-stock-trading/) sentdex
+* ###### [Machine Learning and Pattern Recognition for Algorithmic Forex and Stock Trading](https://pythonprogramming.net/machine-learning-pattern-recognition-algorithmic-forex-stock-trading/) Sentdex
