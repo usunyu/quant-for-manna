@@ -1,5 +1,5 @@
 # Quant for Manna
-My Road to Becoming a Quant
+My road to be a quant
 
 #### Books
 * ###### [Quantitative Trading: How to Build Your Own Algorithmic Trading Business](https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business/dp/1119800064) [2nd] Ernest P. Chan
