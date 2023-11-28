@@ -21,7 +21,7 @@ def check_trend_line(support: bool, pivot: int, slope: float, y: np.array):
 
     # Squared sum of diffs between data and line 
     err = (diffs ** 2.0).sum()
-    return err;
+    return err
 
 
 def optimize_slope(support: bool, pivot:int , init_slope: float, y: np.array):
@@ -49,7 +49,7 @@ def optimize_slope(support: bool, pivot:int , init_slope: float, y: np.array):
             # Gives us the direction to change slope.
             slope_change = best_slope + slope_unit * min_step
             test_err = check_trend_line(support, pivot, slope_change, y)
-            derivative = test_err - best_err;
+            derivative = test_err - best_err
             
             # If increasing by a small amount fails, 
             # try decreasing by a small amount
@@ -81,6 +81,22 @@ def optimize_slope(support: bool, pivot:int , init_slope: float, y: np.array):
     # Optimize done, return best slope and intercept
     return (best_slope, -best_slope * pivot + y[pivot])
 
+
+def fit_upper_trendline(data: np.array):
+    x = np.arange(len(data))
+    coefs = np.polyfit(x, data, 1)
+    line_points = coefs[0] * x + coefs[1]
+    upper_pivot = (data - line_points).argmax()
+    resist_coefs = optimize_slope(False, upper_pivot, coefs[0], data)
+    return resist_coefs
+
+def fit_lower_trendline(data: np.array):
+    x = np.arange(len(data))
+    coefs = np.polyfit(x, data, 1)
+    line_points = coefs[0] * x + coefs[1]
+    lower_pivot = (data - line_points).argmin()
+    support_coefs = optimize_slope(True, lower_pivot, coefs[0], data)
+    return support_coefs
 
 def fit_trendlines_single(data: np.array):
     # find line of best fit (least squared) 
