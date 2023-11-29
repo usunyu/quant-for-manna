@@ -13,3 +13,4 @@ My road to be a quant
 #### Tutorials
 * ###### [Machine Learning and Pattern Recognition for Algorithmic Forex and Stock Trading](https://pythonprogramming.net/machine-learning-pattern-recognition-algorithmic-forex-stock-trading/) Sentdex
 * ###### [Python Programming for Finance](https://pythonprogramming.net/getting-stock-prices-python-programming-for-finance/) Sentdex
+* ###### [Automating Technical Analysis With Python](https://www.youtube.com/playlist?list=PLMOOFzjddzEtOiP7WhQ9uQy7G_9dt3yKF) NeuroTrader
