@@ -6,8 +6,8 @@ import mplfinance as mpf
 
 def directional_change(close: np.array, high: np.array, low: np.array, sigma: float):
     up_zig = True  # Last extreme is a bottom. Next is a top.
-    tmp_max = high.iloc[0]
-    tmp_min = low.iloc[0]
+    tmp_max = high[0]
+    tmp_min = low[0]
     tmp_max_i = 0
     tmp_min_i = 0
 
@@ -16,11 +16,11 @@ def directional_change(close: np.array, high: np.array, low: np.array, sigma: fl
 
     for i in range(len(close)):
         if up_zig:  # Last extreme is a bottom
-            if high.iloc[i] > tmp_max:
+            if high[i] > tmp_max:
                 # New high, update
-                tmp_max = high.iloc[i]
+                tmp_max = high[i]
                 tmp_max_i = i
-            elif close.iloc[i] < tmp_max - tmp_max * sigma:
+            elif close[i] < tmp_max - tmp_max * sigma:
                 # Price retraced by sigma %. Top confirmed, record it
                 # top[0] = confirmation index
                 # top[1] = index of top
@@ -30,14 +30,14 @@ def directional_change(close: np.array, high: np.array, low: np.array, sigma: fl
 
                 # Setup for next bottom
                 up_zig = False
-                tmp_min = low.iloc[i]
+                tmp_min = low[i]
                 tmp_min_i = i
         else:  # Last extreme is a top
-            if low.iloc[i] < tmp_min:
+            if low[i] < tmp_min:
                 # New low, update
-                tmp_min = low.iloc[i]
+                tmp_min = low[i]
                 tmp_min_i = i
-            elif close.iloc[i] > tmp_min + tmp_min * sigma:
+            elif close[i] > tmp_min + tmp_min * sigma:
                 # Price retraced by sigma %. Bottom confirmed, record it
                 # bottom[0] = confirmation index
                 # bottom[1] = index of bottom
@@ -47,7 +47,7 @@ def directional_change(close: np.array, high: np.array, low: np.array, sigma: fl
 
                 # Setup for next top
                 up_zig = True
-                tmp_max = high.iloc[i]
+                tmp_max = high[i]
                 tmp_max_i = i
 
     return tops, bottoms
